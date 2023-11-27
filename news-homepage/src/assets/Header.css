@@ -1,3 +1,8 @@
+:root {
+  --colorHover: #de9191;
+  --colorBackground: #fefdf9;
+}
+
 p {
   color: black;
   font-weight: bold;
@@ -7,8 +12,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ececec;
+  background-color: #fefdf9;
   padding: 2rem;
+}
+
+button{
+  background-color: var(--colorBackground);
 }
 
 .nav-list {
@@ -23,6 +32,10 @@ header {
   color: #1c1c1c;
 }
 
+.nav-list li a:hover {
+  color: #de9793;
+}
+
 .open-menu,
 .close-container {
   display: none;
@@ -32,6 +45,7 @@ header {
   .open-menu,
   .close-container {
     display: block;
+    border: none;
   }
 
   .nav-container {
@@ -40,9 +54,9 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: whitesmoke;
-    padding-top: 4rem;
-    padding-right: 5rem;
+    background-color: var(--colorBackground);
+    padding-top: 5rem;
+    padding-right: 8rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
 
@@ -55,6 +69,13 @@ header {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
+  }
+  .close-button {
+    border: none;
+  }
+
+  .svg-button{
+    width: 1.4rem;
   }
 
   .nav-list {

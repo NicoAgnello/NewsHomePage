@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "../assets/Header.css";
 import logo from "../assets/images/logo.svg";
+import openIcon from "../assets/images/icon-menu.svg";
+import closeIcon from "../assets/images/icon-menu-close.svg";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -17,13 +19,13 @@ const Header = () => {
     <>
       <header>
         <img src={logo} alt="logo" />
-        <button id="open-button" className="open-menu" onClick={openMenu}>
-          Abrir
+        <button  className="open-menu" onClick={openMenu}>
+          <img src={openIcon} alt="openIcon" />
         </button>
         <nav className={open ? "nav-container show-nav" : "nav-container"}>
-          <div id="nav" className="close-container">
-            <button id="close-button" onClick={closeMenu}>
-              Cerrar
+          <div className="close-container">
+            <button className="close-button p-2" onClick={closeMenu}>
+            <img className="svg-button" src={closeIcon} alt="openIcon" />
             </button>
           </div>
           <ul className="nav-list ">

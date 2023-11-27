@@ -1,0 +1,67 @@
+:root {
+  --colorHover: #de9191;
+  --colorBackground: #fefdf9;
+  --colorAside: #00001a;
+  --colorTitleAside: #eeb158;
+  --colorButton: #f15d51;
+}
+
+* {
+  background-color: var(--colorBackground);
+}
+
+.img-desktop {
+  max-height: 30rem;
+  width: 100%;
+}
+
+.title-future {
+  font-weight: bold;
+  font-size: 4rem;
+  max-width: 20vw;
+  text-align: start;
+  color: var(--colorAside);
+}
+
+.text-title {
+  max-width: 30vw;
+  margin: 0;
+  text-align: start;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: var(--colorAside);
+}
+
+h3 ~ p {
+  color: hsl(0, 0%, 60%);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+}
+
+.aside-container h2 {
+  color: var(--colorTitleAside);
+  font-size: 3rem;
+}
+
+.aside-container {
+  background-color: var(--colorAside);
+  color: whitesmoke;
+}
+
+.aside-container > * {
+  background-color: var(--colorAside);
+}
+
+.aside-container > * > * {
+  background-color: var(--colorAside);
+}
+
+.read-button {
+  background-color: var(--colorButton);
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
