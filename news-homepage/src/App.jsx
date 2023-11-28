@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import { Header, Main, Cards } from "./components/index";
 
 const App = () => (
   <>
     <div className="container">
       <Header></Header>
       <Main></Main>
+      <Cards></Cards>
     </div>
   </>
 );

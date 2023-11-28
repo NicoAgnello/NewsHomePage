@@ -1,3 +1,5 @@
-import Header from "./header";
+import Header from "./Header.jsx";
+import Main from "./Main.jsx";
+import Cards from "./Cards.jsx";
 
-export default Header ;
+export { Header, Main, Cards };

@@ -5,7 +5,7 @@ import imgDesktop from "../assets/images/image-web-3-desktop.jpg";
 const Main = () => {
   const cardAside = (title, text) => {
     return (
-      <div>
+      <div className="card-parr">
         <h3>{title}</h3>
         <p>{text}</p>
       </div>
@@ -15,18 +15,19 @@ const Main = () => {
   return (
     <main className="container-fluid">
       <div className="row">
-        <div className="col-8">
-          <img className="img-desktop" src={imgDesktop} alt="img-desktop" />
+        <div className="col-md-8 col-12">
+          <img className="img-desktop d-none d-md-block" src={imgDesktop} alt="img-desktop" />
+          <img className="img-desktop d-block d-md-none" src={imgMobile} alt="img-desktop" />
           <div className="row pt-3">
-            <div className="col-6">
+            <div className="col-lg-6 col-12 ">
               <h1 className="title-future">The Bright Future of Web 3.0?</h1>
             </div>
-            <div className="col-6 d-flex align-items-start flex-column justify-content-between">
-              <p className="text-title">
+            <div className="col-lg-6 col-12 prr-container">
+              <p className="text-title pb-4">
                 We dive into the next evolution of the web that claims to put the power of the platforms back into the
                 hands of the people. But is it really fulfilling its promise?
               </p>
-              <button className="read-button mb-5">Read More</button>
+              <button className="read-button ">Read More</button>
             </div>
           </div>
         </div>
